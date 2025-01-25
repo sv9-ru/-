@@ -1,0 +1,366 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Стандарты кодирования: Исходный файл C:/5/-/mycomplex.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Стандарты кодирования
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('mycomplex_8cpp_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">mycomplex.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="mycomplex_8cpp.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="mycomplex_8h.html">mycomplex.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// Конструкторы</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">   29</a></span><a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex::Complex</a>(<span class="keywordtype">double</span> aRe, <span class="keywordtype">double</span> aIm) : <a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a>(aRe), <a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a>(aIm) {}</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_complex.html#a466cd7b664cc6a864937ceb3dead1323">   35</a></span><a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex::Complex</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a>&amp; aRval) : <a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a>(aRval.<a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a>), <a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a>(aRval.<a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a>) {}</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span></div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_complex.html#a70e14b17c92e3da779686b98f9f3bb2d">   40</a></span><a class="code hl_function" href="class_complex.html#a70e14b17c92e3da779686b98f9f3bb2d">Complex::~Complex</a>() {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> = 0.0;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> = 0.0;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
+</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">// Методы</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span></div>
+<div class="foldopen" id="foldopen00052" data-start="{" data-end="}">
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_complex.html#ae89f691ae1104d55c8beb8075931890a">   52</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_complex.html#ae89f691ae1104d55c8beb8075931890a">Complex::Set</a>(<span class="keywordtype">double</span> aRe, <span class="keywordtype">double</span> aIm) {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> = aRe;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> = aIm;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
+</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
+<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_complex.html#a59b4c03f7077be915ad20d626c6f7fe8">   61</a></span>Complex::operator double() {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_complex.html#a58d7c29c61d424236f183767ed57b716">abs</a>();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span></div>
+<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_complex.html#a58d7c29c61d424236f183767ed57b716">   69</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="class_complex.html#a58d7c29c61d424236f183767ed57b716">Complex::abs</a>() {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">return</span> std::sqrt(<a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> * <a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> + <a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> * <a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a>);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>}</div>
+</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">// Операторы</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span></div>
+<div class="foldopen" id="foldopen00080" data-start="{" data-end="}">
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="class_complex.html#a820afcbb330df716577459d7a3aa3a1c">   80</a></span><a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a> <a class="code hl_function" href="class_complex.html#a820afcbb330df716577459d7a3aa3a1c">Complex::operator+</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a>&amp; aRval) {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a> result;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    result.<a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> = <a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> + aRval.<a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    result.<a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> = <a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> + aRval.<a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>}</div>
+</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span></div>
+<div class="foldopen" id="foldopen00092" data-start="{" data-end="}">
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="class_complex.html#a36739619a07b5478bcd8a28ad2f8b7da">   92</a></span><a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a> <a class="code hl_function" href="class_complex.html#a36739619a07b5478bcd8a28ad2f8b7da">Complex::operator-</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a>&amp; aRval) {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a> result;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    result.<a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> = <a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> - aRval.<a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    result.<a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> = <a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> - aRval.<a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
+</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span></div>
+<div class="foldopen" id="foldopen00104" data-start="{" data-end="}">
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="class_complex.html#aadad5c5980744a959e3388fc981dd183">  104</a></span><a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a> <a class="code hl_function" href="class_complex.html#a820afcbb330df716577459d7a3aa3a1c">Complex::operator+</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; aVal) {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a> result;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    result.<a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> = <a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> + aVal;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    result.<a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> = <a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a>;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}</div>
+</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span></div>
+<div class="foldopen" id="foldopen00116" data-start="{" data-end="}">
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="class_complex.html#ae7c20826cf43bdfd97c60e97b3a1e045">  116</a></span><a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a> <a class="code hl_function" href="class_complex.html#a36739619a07b5478bcd8a28ad2f8b7da">Complex::operator-</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; aVal) {</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a> result(*<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    result.<a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> = <a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> - aVal;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>}</div>
+</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span></div>
+<div class="foldopen" id="foldopen00127" data-start="{" data-end="}">
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="class_complex.html#aa9b4a7d6083ca7040ddd4fe93db5c19d">  127</a></span><a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a> <a class="code hl_function" href="class_complex.html#aa9b4a7d6083ca7040ddd4fe93db5c19d">Complex::operator*</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a>&amp; aRval) {</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a> result;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    result.<a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> = <a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> * aRval.<a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> - <a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> * aRval.<a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a>;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    result.<a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> = <a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> * aRval.<a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> + <a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> * aRval.<a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a>;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>}</div>
+</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span></div>
+<div class="foldopen" id="foldopen00139" data-start="{" data-end="}">
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="class_complex.html#a0b1fc84c27c26bcb5d01ed1c5a16b671">  139</a></span><a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a> <a class="code hl_function" href="class_complex.html#aa9b4a7d6083ca7040ddd4fe93db5c19d">Complex::operator*</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; aVal) {</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a> result;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    result.<a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> = <a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> * aVal;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    result.<a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> = <a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> * aVal;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>}</div>
+</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span></div>
+<div class="foldopen" id="foldopen00151" data-start="{" data-end="}">
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="class_complex.html#a3202ad9055b830be162bd53fe4bdc1c9">  151</a></span><a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a> <a class="code hl_function" href="class_complex.html#a3202ad9055b830be162bd53fe4bdc1c9">Complex::operator/</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; aVal) {</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a> result;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    result.<a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> = <a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> / aVal;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    result.<a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> = <a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> / aVal;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>}</div>
+</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span></div>
+<div class="foldopen" id="foldopen00163" data-start="{" data-end="}">
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="class_complex.html#aae6fdd5b1c287b517e2a19df7df0ad15">  163</a></span><a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a>&amp; <a class="code hl_function" href="class_complex.html#aae6fdd5b1c287b517e2a19df7df0ad15">Complex::operator+=</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a>&amp; aRval) {</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> += aRval.<a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a>;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> += aRval.<a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a>;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>}</div>
+</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span></div>
+<div class="foldopen" id="foldopen00174" data-start="{" data-end="}">
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="class_complex.html#ad564b39e1ee7a3f5135dd20a7bbd6eaa">  174</a></span><a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a>&amp; <a class="code hl_function" href="class_complex.html#ad564b39e1ee7a3f5135dd20a7bbd6eaa">Complex::operator-=</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a>&amp; aRval) {</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> -= aRval.<a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a>;</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> -= aRval.<a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a>;</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>}</div>
+</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span></div>
+<div class="foldopen" id="foldopen00185" data-start="{" data-end="}">
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="class_complex.html#a88c2efcd86488de884da018a36b926c2">  185</a></span><a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a>&amp; <a class="code hl_function" href="class_complex.html#a88c2efcd86488de884da018a36b926c2">Complex::operator*=</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a>&amp; aRval) {</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <span class="keywordtype">double</span> tmpRe = <a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a>;</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> = <a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> * aRval.<a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> - <a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> * aRval.<a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a>;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> = <a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> * aRval.<a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> + tmpRe * aRval.<a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a>;</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>}</div>
+</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span></div>
+<div class="foldopen" id="foldopen00197" data-start="{" data-end="}">
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="class_complex.html#ac7da4cad2e5b24d8591d8a7e8ba31cc3">  197</a></span><a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a>&amp; <a class="code hl_function" href="class_complex.html#aae6fdd5b1c287b517e2a19df7df0ad15">Complex::operator+=</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; aVal) {</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> += aVal;</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>}</div>
+</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span></div>
+<div class="foldopen" id="foldopen00207" data-start="{" data-end="}">
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="class_complex.html#a62bf91164c84f9b3ff5cc161fd5b403c">  207</a></span><a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a>&amp; <a class="code hl_function" href="class_complex.html#ad564b39e1ee7a3f5135dd20a7bbd6eaa">Complex::operator-=</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; aVal) {</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    <a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> -= aVal;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>}</div>
+</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span></div>
+<div class="foldopen" id="foldopen00217" data-start="{" data-end="}">
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="class_complex.html#a0e934ba5f24795e1e21240850fb6ed37">  217</a></span><a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a>&amp; <a class="code hl_function" href="class_complex.html#a88c2efcd86488de884da018a36b926c2">Complex::operator*=</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; aVal) {</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    <a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> *= aVal;</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    <a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> *= aVal;</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>}</div>
+</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span></div>
+<div class="foldopen" id="foldopen00228" data-start="{" data-end="}">
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno"><a class="line" href="class_complex.html#a0d3b730aaaf46887e0d0d91e4a0886a5">  228</a></span><a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a>&amp; <a class="code hl_function" href="class_complex.html#a0d3b730aaaf46887e0d0d91e4a0886a5">Complex::operator/=</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; aVal) {</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    <a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> /= aVal;</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> /= aVal;</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>}</div>
+</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span></div>
+<div class="foldopen" id="foldopen00239" data-start="{" data-end="}">
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno"><a class="line" href="class_complex.html#a3c57cf8e8be7a9314a20cb3d770f71cf">  239</a></span><a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a>&amp; <a class="code hl_function" href="class_complex.html#a3c57cf8e8be7a9314a20cb3d770f71cf">Complex::operator=</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a>&amp; aRval) {</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    <a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> = aRval.<a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a>;</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    <a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> = aRval.<a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a>;</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>}</div>
+</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span></div>
+<div class="foldopen" id="foldopen00250" data-start="{" data-end="}">
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno"><a class="line" href="class_complex.html#aacdfbbab3ab7867a1f7fab4719756924">  250</a></span><a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a>&amp; <a class="code hl_function" href="class_complex.html#a3c57cf8e8be7a9314a20cb3d770f71cf">Complex::operator=</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; aVal) {</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    <a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> = aVal;</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    <a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> = 0.0;</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>}</div>
+</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="comment">// Потоковые операторы</span></div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span></div>
+<div class="foldopen" id="foldopen00264" data-start="{" data-end="}">
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno"><a class="line" href="mycomplex_8cpp.html#a1afe88c9052fb1a9c854d07987f09408">  264</a></span>std::istream&amp; <a class="code hl_function" href="mycomplex_8cpp.html#a1afe88c9052fb1a9c854d07987f09408">operator&gt;&gt;</a>(std::istream&amp; stream, <a class="code hl_class" href="class_complex.html">Complex</a>&amp; a) {</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    <span class="keywordtype">char</span> tmp[256];</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    stream &gt;&gt; a.<a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> &gt;&gt; a.<a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> &gt;&gt; tmp;</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    <span class="keywordflow">return</span> stream;</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>}</div>
+</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span></div>
+<div class="foldopen" id="foldopen00276" data-start="{" data-end="}">
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno"><a class="line" href="mycomplex_8cpp.html#aaeee39f5f83ad86cbe78e942a02921ef">  276</a></span>std::ostream&amp; <a class="code hl_function" href="mycomplex_8cpp.html#aaeee39f5f83ad86cbe78e942a02921ef">operator&lt;&lt;</a>(std::ostream&amp; stream, <a class="code hl_class" href="class_complex.html">Complex</a>&amp; a) {</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    stream &lt;&lt; a.<a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a>;</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    <span class="keywordflow">if</span> (!(a.<a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> &lt; 0)) {</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>        stream &lt;&lt; <span class="charliteral">&#39;+&#39;</span>;</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    }</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    stream &lt;&lt; a.<a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> &lt;&lt; <span class="charliteral">&#39;i&#39;</span>;</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    <span class="keywordflow">return</span> stream;</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>}</div>
+</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> </div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="comment">// Глобальные операторы</span></div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span></div>
+<div class="foldopen" id="foldopen00293" data-start="{" data-end="}">
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno"><a class="line" href="class_complex.html#a82c2376bc7ba27869c7af183c3a0e7b2">  293</a></span><a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a> <a class="code hl_function" href="mycomplex_8cpp.html#a4b1807e2221e04ba8661276644a7eacb">operator+</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; aLval, <span class="keyword">const</span> <a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a>&amp; aRval) {</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    <a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a> result;</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    result.<a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> = aLval + aRval.<a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a>;</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    result.<a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> = aRval.<a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a>;</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>}</div>
+</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span></div>
+<div class="foldopen" id="foldopen00306" data-start="{" data-end="}">
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno"><a class="line" href="class_complex.html#a420865ac94857575c26fa2cebea450a7">  306</a></span><a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a> <a class="code hl_function" href="mycomplex_8cpp.html#ad9363d22ed922d55de7e817eddf90ec0">operator-</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; aLval, <span class="keyword">const</span> <a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a>&amp; aRval) {</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    <a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a> result;</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>    result.<a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> = aLval - aRval.<a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a>;</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    result.<a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> = -aRval.<a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a>;</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>}</div>
+</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span></div>
+<div class="foldopen" id="foldopen00319" data-start="{" data-end="}">
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno"><a class="line" href="class_complex.html#a6e2d603f69e45bb4bb7c98bf90a1cd94">  319</a></span><a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a> <a class="code hl_function" href="mycomplex_8cpp.html#a2518193c907c8db8fe5920468f8d6771">operator*</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; aLval, <span class="keyword">const</span> <a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a>&amp; a) {</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    <a class="code hl_function" href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex</a> result;</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    result.<a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a> = aLval * a.<a class="code hl_variable" href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Re</a>;</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    result.<a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a> = aLval * a.<a class="code hl_variable" href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Im</a>;</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>}</div>
+</div>
+<div class="ttc" id="aclass_complex_html"><div class="ttname"><a href="class_complex.html">Complex</a></div><div class="ttdoc">Класс для представления и работы с комплексными числами.</div><div class="ttdef"><b>Определения</b> <a href="mycomplex_8h_source.html#l00017">mycomplex.h:18</a></div></div>
+<div class="ttc" id="aclass_complex_html_a0d3b730aaaf46887e0d0d91e4a0886a5"><div class="ttname"><a href="class_complex.html#a0d3b730aaaf46887e0d0d91e4a0886a5">Complex::operator/=</a></div><div class="ttdeci">Complex &amp; operator/=(const double &amp;value)</div><div class="ttdoc">Оператор /= для деления на действительное число.</div><div class="ttdef"><b>Определения</b> <a href="#l00228">mycomplex.cpp:228</a></div></div>
+<div class="ttc" id="aclass_complex_html_a25938efdb07e8d21e4a07392a3494e0b"><div class="ttname"><a href="class_complex.html#a25938efdb07e8d21e4a07392a3494e0b">Complex::Im</a></div><div class="ttdeci">double Im</div><div class="ttdoc">Мнимая часть комплексного числа.</div><div class="ttdef"><b>Определения</b> <a href="mycomplex_8h_source.html#l00021">mycomplex.h:21</a></div></div>
+<div class="ttc" id="aclass_complex_html_a3202ad9055b830be162bd53fe4bdc1c9"><div class="ttname"><a href="class_complex.html#a3202ad9055b830be162bd53fe4bdc1c9">Complex::operator/</a></div><div class="ttdeci">Complex operator/(const double &amp;value)</div><div class="ttdoc">Оператор деления комплексного числа на действительное.</div><div class="ttdef"><b>Определения</b> <a href="#l00151">mycomplex.cpp:151</a></div></div>
+<div class="ttc" id="aclass_complex_html_a36739619a07b5478bcd8a28ad2f8b7da"><div class="ttname"><a href="class_complex.html#a36739619a07b5478bcd8a28ad2f8b7da">Complex::operator-</a></div><div class="ttdeci">Complex operator-(const Complex &amp;other)</div><div class="ttdoc">Оператор вычитания двух комплексных чисел.</div><div class="ttdef"><b>Определения</b> <a href="#l00092">mycomplex.cpp:92</a></div></div>
+<div class="ttc" id="aclass_complex_html_a3c57cf8e8be7a9314a20cb3d770f71cf"><div class="ttname"><a href="class_complex.html#a3c57cf8e8be7a9314a20cb3d770f71cf">Complex::operator=</a></div><div class="ttdeci">Complex &amp; operator=(const Complex &amp;other)</div><div class="ttdoc">Оператор присваивания для копирования значений другого комплексного числа.</div><div class="ttdef"><b>Определения</b> <a href="#l00239">mycomplex.cpp:239</a></div></div>
+<div class="ttc" id="aclass_complex_html_a58d7c29c61d424236f183767ed57b716"><div class="ttname"><a href="class_complex.html#a58d7c29c61d424236f183767ed57b716">Complex::abs</a></div><div class="ttdeci">double abs()</div><div class="ttdoc">Вычисляет модуль комплексного числа.</div><div class="ttdef"><b>Определения</b> <a href="#l00069">mycomplex.cpp:69</a></div></div>
+<div class="ttc" id="aclass_complex_html_a70e14b17c92e3da779686b98f9f3bb2d"><div class="ttname"><a href="class_complex.html#a70e14b17c92e3da779686b98f9f3bb2d">Complex::~Complex</a></div><div class="ttdeci">~Complex()</div><div class="ttdoc">Деструктор.</div><div class="ttdef"><b>Определения</b> <a href="#l00040">mycomplex.cpp:40</a></div></div>
+<div class="ttc" id="aclass_complex_html_a7bf9edc279e3a3fda953bf2112f3d1bb"><div class="ttname"><a href="class_complex.html#a7bf9edc279e3a3fda953bf2112f3d1bb">Complex::Complex</a></div><div class="ttdeci">Complex(double aRe=0, double aIm=0)</div><div class="ttdoc">Конструктор с параметрами для инициализации комплексного числа.</div><div class="ttdef"><b>Определения</b> <a href="#l00029">mycomplex.cpp:29</a></div></div>
+<div class="ttc" id="aclass_complex_html_a820afcbb330df716577459d7a3aa3a1c"><div class="ttname"><a href="class_complex.html#a820afcbb330df716577459d7a3aa3a1c">Complex::operator+</a></div><div class="ttdeci">Complex operator+(const Complex &amp;other)</div><div class="ttdoc">Оператор сложения двух комплексных чисел.</div><div class="ttdef"><b>Определения</b> <a href="#l00080">mycomplex.cpp:80</a></div></div>
+<div class="ttc" id="aclass_complex_html_a88c2efcd86488de884da018a36b926c2"><div class="ttname"><a href="class_complex.html#a88c2efcd86488de884da018a36b926c2">Complex::operator*=</a></div><div class="ttdeci">Complex &amp; operator*=(const Complex &amp;other)</div><div class="ttdoc">Оператор *= для умножения на другое комплексное число.</div><div class="ttdef"><b>Определения</b> <a href="#l00185">mycomplex.cpp:185</a></div></div>
+<div class="ttc" id="aclass_complex_html_aa9b4a7d6083ca7040ddd4fe93db5c19d"><div class="ttname"><a href="class_complex.html#aa9b4a7d6083ca7040ddd4fe93db5c19d">Complex::operator*</a></div><div class="ttdeci">Complex operator*(const Complex &amp;other)</div><div class="ttdoc">Оператор умножения двух комплексных чисел.</div><div class="ttdef"><b>Определения</b> <a href="#l00127">mycomplex.cpp:127</a></div></div>
+<div class="ttc" id="aclass_complex_html_aae6fdd5b1c287b517e2a19df7df0ad15"><div class="ttname"><a href="class_complex.html#aae6fdd5b1c287b517e2a19df7df0ad15">Complex::operator+=</a></div><div class="ttdeci">Complex &amp; operator+=(const Complex &amp;other)</div><div class="ttdoc">Оператор += для сложения с другим комплексным числом.</div><div class="ttdef"><b>Определения</b> <a href="#l00163">mycomplex.cpp:163</a></div></div>
+<div class="ttc" id="aclass_complex_html_ad564b39e1ee7a3f5135dd20a7bbd6eaa"><div class="ttname"><a href="class_complex.html#ad564b39e1ee7a3f5135dd20a7bbd6eaa">Complex::operator-=</a></div><div class="ttdeci">Complex &amp; operator-=(const Complex &amp;other)</div><div class="ttdoc">Оператор -= для вычитания другого комплексного числа.</div><div class="ttdef"><b>Определения</b> <a href="#l00174">mycomplex.cpp:174</a></div></div>
+<div class="ttc" id="aclass_complex_html_ae89f691ae1104d55c8beb8075931890a"><div class="ttname"><a href="class_complex.html#ae89f691ae1104d55c8beb8075931890a">Complex::Set</a></div><div class="ttdeci">void Set(double aRe, double aIm=0)</div><div class="ttdoc">Устанавливает значения действительной и мнимой части числа.</div><div class="ttdef"><b>Определения</b> <a href="#l00052">mycomplex.cpp:52</a></div></div>
+<div class="ttc" id="aclass_complex_html_aed0f7f2a72da406620581d863a6dc333"><div class="ttname"><a href="class_complex.html#aed0f7f2a72da406620581d863a6dc333">Complex::Re</a></div><div class="ttdeci">double Re</div><div class="ttdoc">Действительная часть комплексного числа.</div><div class="ttdef"><b>Определения</b> <a href="mycomplex_8h_source.html#l00020">mycomplex.h:20</a></div></div>
+<div class="ttc" id="amycomplex_8cpp_html_a1afe88c9052fb1a9c854d07987f09408"><div class="ttname"><a href="mycomplex_8cpp.html#a1afe88c9052fb1a9c854d07987f09408">operator&gt;&gt;</a></div><div class="ttdeci">std::istream &amp; operator&gt;&gt;(std::istream &amp;stream, Complex &amp;a)</div><div class="ttdoc">Перегрузка оператора ввода для комплексного числа.</div><div class="ttdef"><b>Определения</b> <a href="#l00264">mycomplex.cpp:264</a></div></div>
+<div class="ttc" id="amycomplex_8cpp_html_a2518193c907c8db8fe5920468f8d6771"><div class="ttname"><a href="mycomplex_8cpp.html#a2518193c907c8db8fe5920468f8d6771">operator*</a></div><div class="ttdeci">Complex operator*(const double &amp;aLval, const Complex &amp;a)</div><div class="ttdoc">Глобальный оператор умножения для числа и комплексного числа.</div><div class="ttdef"><b>Определения</b> <a href="#l00319">mycomplex.cpp:319</a></div></div>
+<div class="ttc" id="amycomplex_8cpp_html_a4b1807e2221e04ba8661276644a7eacb"><div class="ttname"><a href="mycomplex_8cpp.html#a4b1807e2221e04ba8661276644a7eacb">operator+</a></div><div class="ttdeci">Complex operator+(const double &amp;aLval, const Complex &amp;aRval)</div><div class="ttdoc">Глобальный оператор сложения для числа и комплексного числа.</div><div class="ttdef"><b>Определения</b> <a href="#l00293">mycomplex.cpp:293</a></div></div>
+<div class="ttc" id="amycomplex_8cpp_html_aaeee39f5f83ad86cbe78e942a02921ef"><div class="ttname"><a href="mycomplex_8cpp.html#aaeee39f5f83ad86cbe78e942a02921ef">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;stream, Complex &amp;a)</div><div class="ttdoc">Перегрузка оператора вывода для комплексного числа.</div><div class="ttdef"><b>Определения</b> <a href="#l00276">mycomplex.cpp:276</a></div></div>
+<div class="ttc" id="amycomplex_8cpp_html_ad9363d22ed922d55de7e817eddf90ec0"><div class="ttname"><a href="mycomplex_8cpp.html#ad9363d22ed922d55de7e817eddf90ec0">operator-</a></div><div class="ttdeci">Complex operator-(const double &amp;aLval, const Complex &amp;aRval)</div><div class="ttdoc">Глобальный оператор вычитания для числа и комплексного числа.</div><div class="ttdef"><b>Определения</b> <a href="#l00306">mycomplex.cpp:306</a></div></div>
+<div class="ttc" id="amycomplex_8h_html"><div class="ttname"><a href="mycomplex_8h.html">mycomplex.h</a></div><div class="ttdoc">Определение класса Complex для работы с комплексными числами.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d52d15f3e194f59b4ba62adc1fdf6573.html">5</a></li><li class="navelem"><a class="el" href="dir_964db1161d9297abe4dd1f7d03b42db5.html">-</a></li><li class="navelem"><a class="el" href="mycomplex_8cpp.html">mycomplex.cpp</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

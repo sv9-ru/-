@@ -1,0 +1,47 @@
+<map id="Complex::Complex" name="Complex::Complex">
+<area shape="rect" id="Node000001" title="Конструктор с параметрами для инициализации комплексного числа." alt="" coords="198,537,331,564"/>
+<area shape="rect" id="Node000002" href="$class_complex.html#a466cd7b664cc6a864937ceb3dead1323" title="Конструктор копирования." alt="" coords="11,5,144,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="258,522,245,418,223,275,208,203,190,137,170,83,148,46,134,35,137,30,152,42,175,80,195,135,213,201,228,274,250,417,263,522"/>
+<area shape="rect" id="Node000003" href="$class_complex.html#aa9b4a7d6083ca7040ddd4fe93db5c19d" title="Оператор умножения двух комплексных чисел." alt="" coords="11,56,144,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="257,523,243,427,219,300,187,177,168,129,148,96,134,85,137,81,152,93,173,127,192,175,225,298,248,426,262,522"/>
+<area shape="rect" id="Node000004" href="$class_complex.html#a0b1fc84c27c26bcb5d01ed1c5a16b671" title="Оператор умножения комплексного числа на действительное." alt="" coords="11,107,144,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="261,522,257,448,242,348,228,294,208,241,182,191,148,147,133,136,136,132,152,143,186,189,213,239,233,293,247,347,263,447,266,522"/>
+<area shape="rect" id="Node000005" href="$class_complex.html#a6e2d603f69e45bb4bb7c98bf90a1cd94" title="Глобальный оператор умножения действительного числа и комплексного." alt="" coords="11,157,144,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="259,522,253,457,236,370,222,324,203,278,178,236,148,198,133,187,136,182,152,194,183,233,207,276,227,322,241,369,258,456,265,522"/>
+<area shape="rect" id="Node000006" href="$class_complex.html#a88c2efcd86488de884da018a36b926c2" title="Оператор *= для умножения на другое комплексное число." alt="" coords="7,208,148,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="258,522,248,465,229,392,215,353,197,315,175,280,148,249,132,237,135,233,151,245,179,277,202,313,220,351,234,390,254,464,263,521"/>
+<area shape="rect" id="Node000007" href="$class_complex.html#a0e934ba5f24795e1e21240850fb6ed37" title="Оператор *= для умножения на действительное число." alt="" coords="7,259,148,285"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="255,523,243,474,223,415,191,353,171,324,148,299,131,288,134,284,151,295,175,321,196,350,227,413,248,473,260,521"/>
+<area shape="rect" id="Node000008" href="$class_complex.html#a820afcbb330df716577459d7a3aa3a1c" title="Оператор сложения двух комплексных чисел." alt="" coords="9,309,146,336"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="252,524,237,485,215,438,186,391,148,350,130,339,133,334,151,346,190,388,220,436,242,483,257,522"/>
+<area shape="rect" id="Node000009" href="$class_complex.html#aadad5c5980744a959e3388fc981dd183" title="Оператор сложения с действительным числом." alt="" coords="9,360,146,387"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="247,525,208,463,180,430,148,401,128,390,131,385,151,397,184,426,212,459,252,522"/>
+<area shape="rect" id="Node000010" href="$class_complex.html#a82c2376bc7ba27869c7af183c3a0e7b2" title="Глобальный оператор сложения действительного числа и комплексного." alt="" coords="9,411,146,437"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="239,528,199,489,148,452,125,440,127,435,151,447,202,485,243,524"/>
+<area shape="rect" id="Node000011" href="$class_complex.html#aae6fdd5b1c287b517e2a19df7df0ad15" title="Оператор += для сложения с другим комплексным числом." alt="" coords="5,461,150,488"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="219,533,149,502,119,491,120,486,151,498,221,528"/>
+<area shape="rect" id="Node000012" href="$class_complex.html#ac7da4cad2e5b24d8591d8a7e8ba31cc3" title="Оператор += для сложения с действительным числом." alt="" coords="5,512,150,539"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="182,542,150,538,150,532,182,537"/>
+<area shape="rect" id="Node000013" href="$class_complex.html#a36739619a07b5478bcd8a28ad2f8b7da" title="Оператор вычитания двух комплексных чисел." alt="" coords="11,563,144,589"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="183,564,144,570,143,564,182,559"/>
+<area shape="rect" id="Node000014" href="$class_complex.html#ae7c20826cf43bdfd97c60e97b3a1e045" title="Оператор вычитания действительного числа из комплексного." alt="" coords="11,613,144,640"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="221,573,151,604,120,615,119,610,149,599,219,568"/>
+<area shape="rect" id="Node000015" href="$class_complex.html#a420865ac94857575c26fa2cebea450a7" title="Глобальный оператор вычитания действительного числа и комплексного." alt="" coords="11,664,144,691"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="243,577,202,616,151,654,127,666,125,661,148,650,199,612,239,573"/>
+<area shape="rect" id="Node000016" href="$class_complex.html#ad564b39e1ee7a3f5135dd20a7bbd6eaa" title="Оператор &#45;= для вычитания другого комплексного числа." alt="" coords="7,715,148,741"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="252,579,212,642,184,676,151,705,131,716,128,712,148,701,180,672,208,639,247,576"/>
+<area shape="rect" id="Node000017" href="$class_complex.html#a62bf91164c84f9b3ff5cc161fd5b403c" title="Оператор &#45;= для вычитания действительного числа." alt="" coords="7,765,148,792"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="257,580,242,619,220,666,190,714,151,755,133,767,130,762,148,751,186,710,215,663,237,617,252,578"/>
+<area shape="rect" id="Node000018" href="$class_complex.html#a3202ad9055b830be162bd53fe4bdc1c9" title="Оператор деления комплексного числа на действительное." alt="" coords="11,816,144,843"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="260,580,248,628,227,689,196,751,175,780,151,806,134,818,131,813,148,802,171,777,191,748,223,687,243,627,255,579"/>
+<area shape="rect" id="Node000019" href="$class_complex.html#a0d3b730aaaf46887e0d0d91e4a0886a5" title="Оператор /= для деления на действительное число." alt="" coords="7,867,148,893"/>
+<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="263,580,254,637,234,711,220,750,202,789,179,825,151,857,135,868,132,864,148,853,175,821,197,786,215,748,229,710,248,636,258,579"/>
+<area shape="rect" id="Node000020" href="$class_complex.html#a6b9e442e57f95f092d669b51426680aa" title="Перегрузка оператора вывода для комплексного числа." alt="" coords="5,917,150,944"/>
+<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="265,580,258,646,241,733,227,779,207,825,183,869,152,907,136,919,133,915,148,903,178,866,203,823,222,778,236,731,253,645,259,579"/>
+<area shape="rect" id="Node000021" href="$class_complex.html#a3c57cf8e8be7a9314a20cb3d770f71cf" title="Оператор присваивания для копирования значений другого комплексного числа." alt="" coords="9,968,146,995"/>
+<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="266,580,263,654,247,754,233,809,213,862,186,913,152,958,136,970,133,965,148,954,182,910,208,860,228,807,242,753,257,653,261,579"/>
+<area shape="rect" id="Node000022" href="$class_complex.html#aacdfbbab3ab7867a1f7fab4719756924" title="Оператор присваивания для установки значения из действительного числа." alt="" coords="9,1019,146,1045"/>
+<area shape="poly" id="edge21_Node000001_Node000022" title=" " alt="" coords="262,580,248,675,225,803,192,926,173,975,152,1008,137,1020,134,1016,148,1005,168,972,187,924,219,802,243,674,257,579"/>
+<area shape="rect" id="Node000023" href="$class_complex.html#a4871db77d2cba295caa3532a4a510a23" title="Перегрузка оператора ввода для комплексного числа." alt="" coords="5,1069,150,1096"/>
+<area shape="poly" id="edge22_Node000001_Node000023" title=" " alt="" coords="263,579,250,684,228,827,213,900,195,966,175,1021,152,1059,137,1071,134,1067,148,1056,170,1019,190,965,208,899,223,826,245,684,258,579"/>
+</map>
