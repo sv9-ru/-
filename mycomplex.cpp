@@ -1,17 +1,42 @@
+/**
+ * @file mycomplex.cpp
+ * @brief Реализация класса Complex для работы с комплексными числами.
+ *
+ * @details Этот файл содержит реализацию методов и операторов класса Complex, включая
+ * базовые арифметические операции, преобразования типов, а также потоковые операторы ввода/вывода.
+ *
+ * @author Дарья Трофимова
+ * @date 25.01.2025
+ */
+
 #include <iostream>
 #include <cmath>
 #include "mycomplex.h"
 using namespace std;
 
+/**
+ * @file mycomplex.cpp
+ * @brief Реализация методов класса Complex для работы с комплексными числами.
+ */
+
 // Конструкторы
 
-// Конструктор с двумя параметрами для инициализации комплексного числа
+/**
+ * @brief Конструктор с параметрами.
+ * @param aRe Действительная часть комплексного числа.
+ * @param aIm Мнимая часть комплексного числа.
+ */
 Complex::Complex(double aRe, double aIm) : Re(aRe), Im(aIm) {}
 
-// Конструктор копирования для создания копии комплексного числа
+/**
+ * @brief Конструктор копирования.
+ * @param aRval Ссылка на объект класса Complex для копирования.
+ */
 Complex::Complex(const Complex& aRval) : Re(aRval.Re), Im(aRval.Im) {}
 
-// Деструктор, который сбрасывает значения действительной и мнимой части
+/**
+ * @brief Деструктор. Обнуляет значения действительной и мнимой части.
+ */
 Complex::~Complex() {
     Re = 0.0;
     Im = 0.0;
@@ -19,25 +44,39 @@ Complex::~Complex() {
 
 // Методы
 
-// Метод для установки значений действительной и мнимой части
+/**
+ * @brief Устанавливает значения действительной и мнимой части.
+ * @param aRe Новое значение действительной части.
+ * @param aIm Новое значение мнимой части.
+ */
 void Complex::Set(double aRe, double aIm) {
     Re = aRe;
     Im = aIm;
 }
 
-// Преобразование объекта Complex в тип double (вычисление модуля числа)
+/**
+ * @brief Преобразование объекта Complex в double.
+ * @return Модуль комплексного числа.
+ */
 Complex::operator double() {
-    return abs(); // Возвращаем абсолютное значение комплексного числа
+    return abs();
 }
 
-// Метод для вычисления модуля комплексного числа (абсолютной величины)
+/**
+ * @brief Вычисляет модуль комплексного числа.
+ * @return Абсолютное значение комплексного числа.
+ */
 double Complex::abs() {
     return std::sqrt(Re * Re + Im * Im);
 }
 
 // Операторы
 
-// Оператор сложения для двух комплексных чисел
+/**
+ * @brief Оператор сложения.
+ * @param aRval Комплексное число для сложения.
+ * @return Результат сложения.
+ */
 Complex Complex::operator+(const Complex& aRval) {
     Complex result;
     result.Re = Re + aRval.Re;
@@ -45,7 +84,11 @@ Complex Complex::operator+(const Complex& aRval) {
     return result;
 }
 
-// Оператор вычитания для двух комплексных чисел
+/**
+ * @brief Оператор вычитания.
+ * @param aRval Комплексное число для вычитания.
+ * @return Результат вычитания.
+ */
 Complex Complex::operator-(const Complex& aRval) {
     Complex result;
     result.Re = Re - aRval.Re;
@@ -53,7 +96,11 @@ Complex Complex::operator-(const Complex& aRval) {
     return result;
 }
 
-// Оператор сложения с добавлением числа (сложение с действительным числом)
+/**
+ * @brief Оператор сложения с действительным числом.
+ * @param aVal Действительное число для сложения.
+ * @return Результат сложения.
+ */
 Complex Complex::operator+(const double& aVal) {
     Complex result;
     result.Re = Re + aVal;
@@ -61,14 +108,22 @@ Complex Complex::operator+(const double& aVal) {
     return result;
 }
 
-// Оператор вычитания с вычитанием числа (вычитание из действительной части)
+/**
+ * @brief Оператор вычитания с действительным числом.
+ * @param aVal Действительное число для вычитания.
+ * @return Результат вычитания.
+ */
 Complex Complex::operator-(const double& aVal) {
-    Complex result(*this); // Создаем копию текущего объекта
+    Complex result(*this);
     result.Re = Re - aVal;
     return result;
 }
 
-// Оператор умножения для двух комплексных чисел
+/**
+ * @brief Оператор умножения.
+ * @param aRval Комплексное число для умножения.
+ * @return Результат умножения.
+ */
 Complex Complex::operator*(const Complex& aRval) {
     Complex result;
     result.Re = Re * aRval.Re - Im * aRval.Im;
@@ -76,7 +131,11 @@ Complex Complex::operator*(const Complex& aRval) {
     return result;
 }
 
-// Оператор умножения на число (умножение комплексного числа на действительное)
+/**
+ * @brief Оператор умножения на действительное число.
+ * @param aVal Действительное число для умножения.
+ * @return Результат умножения.
+ */
 Complex Complex::operator*(const double& aVal) {
     Complex result;
     result.Re = Re * aVal;
@@ -84,8 +143,11 @@ Complex Complex::operator*(const double& aVal) {
     return result;
 }
 
-
-// Оператор деления комплексного числа на число
+/**
+ * @brief Оператор деления на действительное число.
+ * @param aVal Действительное число для деления.
+ * @return Результат деления.
+ */
 Complex Complex::operator/(const double& aVal) {
     Complex result;
     result.Re = Re / aVal;
@@ -93,21 +155,33 @@ Complex Complex::operator/(const double& aVal) {
     return result;
 }
 
-// Оператор += для сложения двух комплексных чисел (прибавление комплексного числа)
+/**
+ * @brief Оператор += для сложения с комплексным числом.
+ * @param aRval Комплексное число для сложения.
+ * @return Ссылка на изменённый объект.
+ */
 Complex& Complex::operator+=(const Complex& aRval) {
     Re += aRval.Re;
     Im += aRval.Im;
     return *this;
 }
 
-// Оператор -= для вычитания двух комплексных чисел (вычитание комплексного числа)
+/**
+ * @brief Оператор -= для вычитания комплексного числа.
+ * @param aRval Комплексное число для вычитания.
+ * @return Ссылка на изменённый объект.
+ */
 Complex& Complex::operator-=(const Complex& aRval) {
     Re -= aRval.Re;
     Im -= aRval.Im;
     return *this;
 }
 
-// Оператор *= для умножения двух комплексных чисел (умножение на комплексное число)
+/**
+ * @brief Оператор *= для умножения на комплексное число.
+ * @param aRval Комплексное число для умножения.
+ * @return Ссылка на изменённый объект.
+ */
 Complex& Complex::operator*=(const Complex& aRval) {
     double tmpRe = Re;
     Re = Re * aRval.Re - Im * aRval.Im;
@@ -115,40 +189,64 @@ Complex& Complex::operator*=(const Complex& aRval) {
     return *this;
 }
 
-// Оператор += для прибавления числа к комплексному числу
+/**
+ * @brief Оператор += для сложения с действительным числом.
+ * @param aVal Действительное число для сложения.
+ * @return Ссылка на изменённый объект.
+ */
 Complex& Complex::operator+=(const double& aVal) {
     Re += aVal;
     return *this;
 }
 
-// Оператор -= для вычитания числа из комплексного числа
+/**
+ * @brief Оператор -= для вычитания действительного числа.
+ * @param aVal Действительное число для вычитания.
+ * @return Ссылка на изменённый объект.
+ */
 Complex& Complex::operator-=(const double& aVal) {
     Re -= aVal;
     return *this;
 }
 
-// Оператор *= для умножения комплексного числа на число
+/**
+ * @brief Оператор *= для умножения на действительное число.
+ * @param aVal Действительное число для умножения.
+ * @return Ссылка на изменённый объект.
+ */
 Complex& Complex::operator*=(const double& aVal) {
     Re *= aVal;
     Im *= aVal;
     return *this;
 }
 
-// Оператор /= для деления комплексного числа на число
+/**
+ * @brief Оператор /= для деления на действительное число.
+ * @param aVal Действительное число для деления.
+ * @return Ссылка на изменённый объект.
+ */
 Complex& Complex::operator/=(const double& aVal) {
     Re /= aVal;
     Im /= aVal;
     return *this;
 }
 
-// Оператор присваивания для копирования комплексного числа
+/**
+ * @brief Оператор присваивания для копирования комплексного числа.
+ * @param aRval Комплексное число для копирования.
+ * @return Ссылка на изменённый объект.
+ */
 Complex& Complex::operator=(const Complex& aRval) {
     Re = aRval.Re;
     Im = aRval.Im;
     return *this;
 }
 
-// Оператор присваивания для присваивания числа комплексному числу
+/**
+ * @brief Оператор присваивания для присваивания числа комплексному числу.
+ * @param aVal Действительное число для присваивания.
+ * @return Ссылка на изменённый объект.
+ */
 Complex& Complex::operator=(const double& aVal) {
     Re = aVal;
     Im = 0.0;
@@ -157,26 +255,41 @@ Complex& Complex::operator=(const double& aVal) {
 
 // Потоковые операторы
 
-// Перегрузка оператора ввода для комплексного числа
+/**
+ * @brief Перегрузка оператора ввода для комплексного числа.
+ * @param stream Входной поток.
+ * @param a Ссылка на объект Complex для ввода.
+ * @return Ссылка на входной поток.
+ */
 std::istream& operator>>(std::istream& stream, Complex& a) {
-    char tmp[256]; // Временная переменная для пропуска символа (например, 'i')
-    stream >> a.Re >> a.Im >> tmp;  // Вводим действительную и мнимую части
-    return stream;  // Возвращаем поток
+    char tmp[256];
+    stream >> a.Re >> a.Im >> tmp;
+    return stream;
 }
 
-// Перегрузка оператора вывода для комплексного числа
+/**
+ * @brief Перегрузка оператора вывода для комплексного числа.
+ * @param stream Выходной поток.
+ * @param a Ссылка на объект Complex для вывода.
+ * @return Ссылка на выходной поток.
+ */
 std::ostream& operator<<(std::ostream& stream, Complex& a) {
-    stream << a.Re;  // Выводим действительную часть
+    stream << a.Re;
     if (!(a.Im < 0)) {
-        stream << '+';  // Если мнимая часть не отрицательная, выводим '+'
+        stream << '+';
     }
-    stream << a.Im << 'i';  // Выводим мнимую часть и символ 'i'
-    return stream;  // Возвращаем поток
+    stream << a.Im << 'i';
+    return stream;
 }
 
 // Глобальные операторы
 
-// Глобальный оператор сложения для числа и комплексного числа
+/**
+ * @brief Глобальный оператор сложения для числа и комплексного числа.
+ * @param aLval Действительное число.
+ * @param aRval Комплексное число.
+ * @return Результат сложения.
+ */
 Complex operator+(const double& aLval, const Complex& aRval) {
     Complex result;
     result.Re = aLval + aRval.Re;
@@ -184,7 +297,12 @@ Complex operator+(const double& aLval, const Complex& aRval) {
     return result;
 }
 
-// Глобальный оператор вычитания для числа и комплексного числа
+/**
+ * @brief Глобальный оператор вычитания для числа и комплексного числа.
+ * @param aLval Действительное число.
+ * @param aRval Комплексное число.
+ * @return Результат вычитания.
+ */
 Complex operator-(const double& aLval, const Complex& aRval) {
     Complex result;
     result.Re = aLval - aRval.Re;
@@ -192,7 +310,12 @@ Complex operator-(const double& aLval, const Complex& aRval) {
     return result;
 }
 
-// Глобальный оператор умножения для числа и комплексного числа
+/**
+ * @brief Глобальный оператор умножения для числа и комплексного числа.
+ * @param aLval Действительное число.
+ * @param a Комплексное число.
+ * @return Результат умножения.
+ */
 Complex operator*(const double& aLval, const Complex& a) {
     Complex result;
     result.Re = aLval * a.Re;
