@@ -1,16 +1,34 @@
 #include <iostream>
-#include     "mycomplex.h"
-using namespace std;
-int main(){//тестирование класса комплексных чисел
- Complex A,B(-4), C(23.0, 45.9);
-cout<<A <<","<< B<<","<<C <<endl; A=B+C;
-cout<<"A=B+C,A="<< A<<endl;
+#include "mycomplex.h"
 
-Complex M=B-C;
-cout<< "M = B - C, M = " << M << endl;cout<<"M*A="<<M*A<<endl;
-cout<<"M/4.45="<<M/4.45<<endl;
+int main() {
+    // Тестирование класса комплексных чисел
+    Complex a, b(-4), c(23.0, 45.9);
 
-    Complex D;
-  	cout<<"Enter complex number D = "; cin >>D;
- A+=C+D;
-cout << "D = " << D << "\nA = " << A << endl;return 0;}
+    // Вывод начальных значений
+    std::cout << "Initial values:\n";
+    std::cout << "A = " << a << ", B = " << b << ", C = " << c << std::endl;
+
+    // Операция сложения
+    a = b + c;
+    std::cout << "A = B + C, A = " << a << std::endl;
+
+    // Операция вычитания
+    Complex m = b - c;
+    std::cout << "M = B - C, M = " << m << std::endl;
+
+    // Умножение и деление
+    std::cout << "M * A = " << m * a << std::endl;
+    std::cout << "M / 4.45 = " << m / 4.45 << std::endl;
+
+    // Ввод числа пользователем
+    Complex d;
+    std::cout << "Enter complex number D: ";
+    std::cin >> d;
+
+    // Итоговые вычисления
+    a += c + d;
+    std::cout << "D = " << d << "\nA = " << a << std::endl;
+
+    return 0;
+}
