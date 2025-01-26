@@ -1,0 +1,5 @@
+<map id="Complex::abs" name="Complex::abs">
+<area shape="rect" id="Node000001" title="Вычисляет модуль комплексного числа." alt="" coords="224,5,326,32"/>
+<area shape="rect" id="Node000002" href="$class_complex.html#a59b4c03f7077be915ad20d626c6f7fe8" title="Оператор преобразования типа для получения модуля числа." alt="" coords="5,5,176,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,21,176,21,176,16,208,16"/>
+</map>

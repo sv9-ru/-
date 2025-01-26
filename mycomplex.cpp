@@ -14,13 +14,19 @@
 #include "mycomplex.h"
 using namespace std;
 
+
 //изминение для make с двумя изминениями
+
+
 
 
 /**
  * @file mycomplex.cpp
  * @brief Реализация методов класса Complex для работы с комплексными числами.
  */
+
+
+
 
 
 // Конструкторы
