@@ -1,6 +1,7 @@
 #include <iostream>
 #include "mycomplex.h"
-
+//изменение дл€ make
+//второе измение дл€ make с двум€ изминени€ми
 int main() {
     // “естирование класса комплексных чисел
     Complex a, b(-4), c(23.0, 45.9);
