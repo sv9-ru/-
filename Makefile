@@ -1,13 +1,16 @@
-# Makefile NX
+complex: bin/obj/mycomplex.o bin/obj/testcmp.o
+	g++ -o bin/complex bin/obj/mycomplex.o bin/obj/testcmp.o
 
-complex: mycomplex.o testcmp.o
-	g++ -o complex mycomplex.o testcmp.o
+# Правило для компиляции mycomplex.o
+bin/obj/mycomplex.o: mycomplex.cpp mycomplex.h
+	if not exist bin\obj mkdir bin\obj
+	g++ -o bin/obj/mycomplex.o -c mycomplex.cpp
 
-mycomplex.o: mycomplex.cpp mycomplex.h
-	g++ -c mycomplex.cpp
+# Правило для компиляции testcmp.o
+bin/obj/testcmp.o: testcmp.cpp
+	if not exist bin\obj mkdir bin\obj
+	g++ -o bin/obj/testcmp.o -c testcmp.cpp
 
-testcmp.o: testcmp.cpp
-	g++ -c testcmp.cpp
-
+# Правило для очистки сгенерированных файлов
 clean:
-	rm -f *.o complex
+	del /Q bin\obj\*.o bin\complex
